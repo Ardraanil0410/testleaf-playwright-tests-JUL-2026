@@ -34,3 +34,8 @@ testdetails.checkStatus();
 let testdetails2 = new TestCase("Payment Test", "Latheesh", 8, "Failed");
 testdetails2.displayTestDetails();
 testdetails2.checkStatus();
+let tests = [testdetails, testdetails2];
+for (let test of tests) {
+    test.checkStatus();
+    test.displayTestDetails();
+}
