@@ -3,6 +3,9 @@ function fibonacci(n) {
     if (n === 0) {
         return 0;
     }
+    if (n < 0) {
+        throw new Error("n must be a non-negative integer");
+    }
     let a = 0;
     let b = 1;
     for (let i = 2; i <= n; i++) {
@@ -17,3 +20,4 @@ console.log(fibonacci(1));
 console.log(fibonacci(5));
 console.log(fibonacci(7));
 console.log(fibonacci(10));
+console.log(fibonacci(-1));
